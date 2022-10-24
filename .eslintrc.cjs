@@ -6,7 +6,6 @@ module.exports = {
   extends: [
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
-    "use-encapsulation",
     "standard",
     "prettier",
   ],
@@ -18,6 +17,6 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "use-encapsulation", "@typescript-eslint"],
   rules: {},
 };
