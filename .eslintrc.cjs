@@ -19,4 +19,9 @@ module.exports = {
   },
   plugins: ["react", "use-encapsulation", "@typescript-eslint"],
   rules: {},
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
 };
