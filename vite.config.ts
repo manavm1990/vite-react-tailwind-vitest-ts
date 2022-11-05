@@ -7,6 +7,17 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      "@": "/src",
+      "@components": "/src/components",
+      "@hooks": "/src/hooks",
+      "@interfaces: "/src/interfaces",
+      "@routes": "/src/routes",
+      "@services": "/src/services",
+      "@utils": "/src/utils",
+    },
+  },
   test: {
     globals: true,
     environment: 'jsdom',
