@@ -11,9 +11,6 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "noEmit": true,
-    "paths": {
-      "@interfaces/*": ["interfaces/*"],
-    },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
