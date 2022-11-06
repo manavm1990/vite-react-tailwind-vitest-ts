@@ -34,18 +34,18 @@ You should install the recommended extensions when you open the project in VS Co
 This project uses the following architecture heavily inspired by Tania Rascia's [React Architecture](https://www.taniarascia.com/react-architecture-directory-structure/).
 
 - `src/` - All of our source code.
-  - `components/` - All of our React components (`.jsx`). Global shared/reusable components, such as layout (wrappers, navigation), form components, buttons.
+  - `components/` - All of our React components (`.tsx`). Global shared/reusable components, such as layout (wrappers, navigation), form components, buttons.
   - `hooks/` - All of our custom React hooks (`.js`).
-  - `routes/` - All of our React routes (`.jsx`). Each route is a 'page'.
-  - `services/` - All of our services (`.js`). Services are responsible for making API calls and returning data, for example (api.js). Or, maybe you have a service that is responsible for managing authentication (auth.js). Or, `localStorage` (storage.js). The stuff in here has consequences, that is, **side effects**.
+  - `routes/` - All of our React routes (`.tsx`). Each route is a 'page'.
+  - `services/` - All of our services (`.ts`). Services are responsible for making API calls and returning data, for example (api.ts). Or, maybe you have a service that is responsible for managing authentication (auth.ts). Or, `localStorage` (storage.ts). The stuff in here has consequences, that is, **side effects**.
   - `types/` - If you're using TS, you probably know what this is for! :)
-  - `utils/` - All of our utility functions (`.js`). Utilities, helpers, constants, and the like. Unlike `services`, these are not responsible for side effects.
+  - `utils/` - All of our utility functions (`.ts`). Utilities, helpers, constants, and the like. Unlike `services`, these are not responsible for side effects.
 
 ### Absolute Imports
 
 This project uses absolute imports for all of our files. This means that we can import files from any directory using the `@` prefix instead of relative paths (e.g. `import Button from '@/components/Button'` instead of `import Button from '../../components/Button'`).
 
-This works for any of the directories in `src/` as listed above. If you need to add more, see [`vite.config.js`](./vite.config.js).
+This works for any of the directories in `src/` as listed above. If you need to add more, see [`vite.config.ts`](./vite.config.ts).
 
 ## License
 
